@@ -1,3 +1,3 @@
-# Web Moderno com JavaScript 2020 COMPLETO + Projetos
+# Curso Web Moderno Udemy
 
-Para mais informações acessar https://www.cod3r.com.br/courses/web-moderno
+Curso de de Apredizagem para desenvolvimento de Front-end e Back-end Web.
