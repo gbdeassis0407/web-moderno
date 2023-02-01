@@ -6,7 +6,49 @@
     <title>CSS Selectors</title>
     <link rel="stylesheet" href="css/tag.css">
     <style>
-        /* ... */
+       /* Seletor para toda pagina
+        *
+    
+       seletor apenas para classe tag criada
+       .tag
+
+        seletor de ID's
+       #aprovados
+
+       seletor para tag mais a seção dos id's
+       #aninhado
+
+       seleciona dentro do id diretamente alinhado
+       #aninhado section
+
+       seletor para uso de seletores vizinhos
+       p + ul
+
+       Dentro do elemento pai -P ele vai executar a função para os filhos ol
+       p ~ ol 
+       
+       seletor por propriedade
+       [feira]
+       a classe feira + referencia a casa
+       [feira=casa]
+       tudo dentro da feira + suas classes
+       [feira~=escritorio]
+       nomeclatura
+       [feira*=sa]
+       [feira*=asa]
+
+        seletor involvendo filhos
+        span:nth-child(1)
+        section > :nth-child(odd)
+        section > :nth-child(even)
+        section > :nth-child(odd), ul, p
+        section > :nth-child(odd) label
+       */
+       
+        section > span:nth-of-type(2){
+            color: rgb(255, 255, 0);
+            background-color: #f77;
+       }
     </style>
 </head>
 
@@ -28,8 +70,8 @@
                 <li>Ana</li>
             </ol>
             <div id='aninhado' class='tag'>
-                <div class="tag">
-                    <section class='tag'>
+                <div class='tag'>
+                    <section class='tag nolabel'>
                         <span class='tag'>1</span>
                         <p class='tag'>2</p>
                         <span class='tag'>3</span>
